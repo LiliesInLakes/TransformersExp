@@ -1,6 +1,8 @@
-Going through the pipeline docs
+##Going through the pipeline docs
 
-I am on a journey to explore the transformers repo of Hugging Face. So I went through th pipeline docs. 
+I am on a journey to explore the transformers repo of Hugging Face. 
+lLMS are not only for text generation. but people use it for classification and sentiment analysis also. and extraction and parsing, code translation, data augmentation also. 
+So I went through th pipeline docs. 
 First of all, the code is written for notebooks. If you run it in a script form, you will need to print the result separately. 
 from transformers import pipeline
 pipeline = pipeline(task="automatic-speech-recognition", model="openai/whisper-large-v3")
