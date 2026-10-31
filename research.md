@@ -20,3 +20,9 @@ access to gemma-2–2b is restricted.
 Serve CLI: lightweight server. 
     pip install transformers[serving] ->> this has issue on zsh. zsh cant handle the brackets as is. 
         We need to write pip install 'transformers[serving]' OR pip isntall transformers\[serving\] instead
+    transformers serve
+    ok the docs are a bit confusing. jUst running htese two commands doesnt create a chat interface.
+    It just creates an api server. 
+    /v1/chat/completions only accepts POST requests. 
+    transformers chat Qwen/Qwen2.5-0.5B-Instruct 
+    this loaded the chat interface to test out the model! super cool. I ran this after turning the transformers server on. This was on a new terminal. When i went back to the server terminal, the /v1/chat/completions HTTP/1.1 was there. it showed the model receiving the request (Qwen) and showed the files being loaded (progress bar)
